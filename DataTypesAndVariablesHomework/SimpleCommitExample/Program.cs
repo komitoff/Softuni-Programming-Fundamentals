@@ -10,7 +10,12 @@ namespace SimpleCommitExample
     {
         static void Main(string[] args)
         {
-            //TODO write a program here
+            sayHello();
+        }
+
+        public static void sayHello()
+        {
+            Console.WriteLine("Hello GitHub");
         }
     }
 }
