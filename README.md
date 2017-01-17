@@ -1,3 +1,3 @@
 # Softuni-Programming-Fundamentals
 
-trying to push without poll.
+adding just a simple change to make a conflict.
