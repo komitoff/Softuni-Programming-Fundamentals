@@ -8,6 +8,7 @@ class LatinLetters
 
         char n = Convert.ToChar(nn + 97);
 
+        //print all the couples of latin letters
         for (char i = 'a'; i < n; i++)
         {
             for (char j = 'a'; j < n; j++)
