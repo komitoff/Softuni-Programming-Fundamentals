@@ -31,6 +31,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "13.DigitOrSymbol", "13.Digi
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "14.IntegerToHexAndBinary", "14.IntegerToHexAndBinary\14.IntegerToHexAndBinary.csproj", "{63E64A8E-9A31-4251-843F-E32D6CD82F92}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "15.FastPrimeChecker", "15.FastPrimeChecker\15.FastPrimeChecker.csproj", "{337E594E-08A9-4705-B951-A2ACAFE18738}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -93,6 +95,10 @@ Global
 		{63E64A8E-9A31-4251-843F-E32D6CD82F92}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{63E64A8E-9A31-4251-843F-E32D6CD82F92}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{63E64A8E-9A31-4251-843F-E32D6CD82F92}.Release|Any CPU.Build.0 = Release|Any CPU
+		{337E594E-08A9-4705-B951-A2ACAFE18738}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{337E594E-08A9-4705-B951-A2ACAFE18738}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{337E594E-08A9-4705-B951-A2ACAFE18738}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{337E594E-08A9-4705-B951-A2ACAFE18738}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
