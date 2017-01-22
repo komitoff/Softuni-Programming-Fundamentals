@@ -18,10 +18,11 @@ class FastPrimeChecker
         //    }
         //    Console.WriteLine($"{DAVIDIM} is prime -> {TowaLIE}");
         //}
+        Console.WriteLine();
 
         int length = int.Parse(Console.ReadLine());
         int counter = 0;
-        for (int i = 1; i <= length; i++)
+        for (int i = 2; i <= length; i++)
         {
             bool isPrime = false; 
             for (int j = 1; j <= i; j++)
@@ -37,7 +38,7 @@ class FastPrimeChecker
                 isPrime = true;
             }
             counter = 0;
-            Console.WriteLine($"{i} is prime -> {isPrime}");
+            Console.WriteLine($"{i} -> {isPrime}");
         }
 
     }

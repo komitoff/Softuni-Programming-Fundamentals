@@ -19,7 +19,7 @@ class DigitOrSymbol
         {
             Console.WriteLine("vowel");
         }
-        else if (asciiValue[0] >= 48 || asciiValue[0] <= 57)
+        else if (asciiValue[0] >= 48 && asciiValue[0] <= 57)
         {
             Console.WriteLine("digit");
         }
