@@ -7,6 +7,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "1.BlankReceipt", "1.BlankRe
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "2.SignOfInteger", "2.SignOfInteger\2.SignOfInteger.csproj", "{3DA97340-6837-49DD-93C9-002ADFA1392D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "3.PrintingTriangle", "3.PrintingTriangle\3.PrintingTriangle.csproj", "{CE7AEE00-ED7F-4309-AAE6-88142904A22E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "4.DrawFilledSquare", "4.DrawFilledSquare\4.DrawFilledSquare.csproj", "{83C54829-9A79-48E2-9DDD-2ACE5F9B4D4A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +25,14 @@ Global
 		{3DA97340-6837-49DD-93C9-002ADFA1392D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3DA97340-6837-49DD-93C9-002ADFA1392D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3DA97340-6837-49DD-93C9-002ADFA1392D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CE7AEE00-ED7F-4309-AAE6-88142904A22E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CE7AEE00-ED7F-4309-AAE6-88142904A22E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CE7AEE00-ED7F-4309-AAE6-88142904A22E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CE7AEE00-ED7F-4309-AAE6-88142904A22E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{83C54829-9A79-48E2-9DDD-2ACE5F9B4D4A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{83C54829-9A79-48E2-9DDD-2ACE5F9B4D4A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{83C54829-9A79-48E2-9DDD-2ACE5F9B4D4A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{83C54829-9A79-48E2-9DDD-2ACE5F9B4D4A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
