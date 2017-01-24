@@ -49,7 +49,7 @@ class PriceChangeAlert
     }
 
     /// <summary>
-    /// 
+    /// Returns true if there is significant difference
     /// </summary>
     /// <param name="threshold"></param>
     /// <param name="isDiff"></param>
