@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "E4.NumbersInReversedOrder",
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "E5.FibonacciElements", "E5.FibonacciElements\E5.FibonacciElements.csproj", "{7469DDC6-BFDB-4BEB-8B8E-52E4A45E1326}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "E6.PrimeChecker", "E6.PrimeChecker\E6.PrimeChecker.csproj", "{30F32738-9CA4-4B6F-A7C8-B85C4C507201}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{7469DDC6-BFDB-4BEB-8B8E-52E4A45E1326}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7469DDC6-BFDB-4BEB-8B8E-52E4A45E1326}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7469DDC6-BFDB-4BEB-8B8E-52E4A45E1326}.Release|Any CPU.Build.0 = Release|Any CPU
+		{30F32738-9CA4-4B6F-A7C8-B85C4C507201}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{30F32738-9CA4-4B6F-A7C8-B85C4C507201}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{30F32738-9CA4-4B6F-A7C8-B85C4C507201}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{30F32738-9CA4-4B6F-A7C8-B85C4C507201}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
