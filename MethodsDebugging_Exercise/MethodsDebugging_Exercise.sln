@@ -23,7 +23,9 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "E9.LongerLIne", "E9.LongerL
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "E10.CubeProperties", "E10.CubeProperties\E10.CubeProperties.csproj", "{1C94DDD1-D004-43B3-ACD8-75E48B54E804}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "E12.GeometryCalculator", "E12.GeometryCalculator\E12.GeometryCalculator.csproj", "{B0C6C23A-06B9-49C7-AC5E-37C296F74FA6}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "E11.GeometryCalculator", "E12.GeometryCalculator\E11.GeometryCalculator.csproj", "{B0C6C23A-06B9-49C7-AC5E-37C296F74FA6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "E12.MasterNumbers", "E12.MasterNumbers\E12.MasterNumbers.csproj", "{4C324582-95A8-4082-A07B-4EA4DFFE71E1}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -75,6 +77,10 @@ Global
 		{B0C6C23A-06B9-49C7-AC5E-37C296F74FA6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B0C6C23A-06B9-49C7-AC5E-37C296F74FA6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B0C6C23A-06B9-49C7-AC5E-37C296F74FA6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4C324582-95A8-4082-A07B-4EA4DFFE71E1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4C324582-95A8-4082-A07B-4EA4DFFE71E1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4C324582-95A8-4082-A07B-4EA4DFFE71E1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4C324582-95A8-4082-A07B-4EA4DFFE71E1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
