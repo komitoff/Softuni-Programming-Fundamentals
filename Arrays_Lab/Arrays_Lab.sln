@@ -17,6 +17,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "E6.ReverseStringArrray", "E
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "E7.SumArrays", "E7.SumArrays\E7.SumArrays.csproj", "{BAC97DC3-7701-4E75-8A69-32A4DA793D66}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "E8.CondensedNumbers", "E8.CondensedNumbers\E8.CondensedNumbers.csproj", "{5609C02B-0119-41BD-A719-FC68A361E598}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -51,6 +53,10 @@ Global
 		{BAC97DC3-7701-4E75-8A69-32A4DA793D66}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BAC97DC3-7701-4E75-8A69-32A4DA793D66}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BAC97DC3-7701-4E75-8A69-32A4DA793D66}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5609C02B-0119-41BD-A719-FC68A361E598}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5609C02B-0119-41BD-A719-FC68A361E598}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5609C02B-0119-41BD-A719-FC68A361E598}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5609C02B-0119-41BD-A719-FC68A361E598}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
