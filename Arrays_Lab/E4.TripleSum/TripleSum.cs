@@ -24,7 +24,13 @@ class TripleSum
                     long tmp = numbers[i] + numbers[j];
                     for (int k = 0; k < numbers.Length; k++)
                     {
-                        if (tmp == numbers[k])
+                        if (tmp == 0)
+                        {
+                            Console.WriteLine($"{numbers[i]} + {numbers[j]} == {numbers[k]}");
+                            match = true;
+                            break;
+                        }
+                        else if (tmp == numbers[k])
                         {
                             Console.WriteLine($"{numbers[i]} + {numbers[j]} == {numbers[k]}");
                             match = true;
