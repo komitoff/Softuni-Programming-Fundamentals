@@ -11,21 +11,37 @@ class SumSequence
         int n = int.Parse(Console.ReadLine());
         int k = int.Parse(Console.ReadLine());
 
+        n = Math.Abs(n);
+        k = Math.Abs(k);
+
         int[] sequence = new int[n];
         sequence[0] = 1;
-        for (int i = 1; i <= k; i++)
+        if (n > k)
         {
-            for (int j = 0; j < i; j++)
+            for (int i = 1; i <= k; i++)
             {
-                sequence[i] += sequence[j];
+                for (int j = 0; j < i; j++)
+                {
+                    sequence[i] += sequence[j];
+                }
+            }
+
+            for (int i = k + 1; i < n; i++)
+            {
+                for (int j = i - k; j < i; j++)
+                {
+                    sequence[i] += sequence[j];
+                }
             }
         }
-
-        for (int i = k + 1; i < n; i++)
+        else
         {
-            for (int j = i - k; j < i; j++)
+            for (int i = 1; i < n; i++)
             {
-                sequence[i] += sequence[j];
+                for (int j = 0; j < i; j++)
+                {
+                    sequence[i] += sequence[j];
+                }
             }
         }
 
