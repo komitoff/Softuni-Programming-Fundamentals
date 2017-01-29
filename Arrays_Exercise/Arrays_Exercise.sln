@@ -21,6 +21,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "E8.MostFrequentNumber", "E8
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "E9.IndexOfLetters", "E9.IndexOfLetters\E9.IndexOfLetters.csproj", "{399311D7-B5AA-4A93-856C-0B6AE39B206B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "E10.PairsByDifference", "E10.PairsByDifference\E10.PairsByDifference.csproj", "{80B46CDF-00B2-4E62-91C4-9361696AAC70}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -63,6 +65,10 @@ Global
 		{399311D7-B5AA-4A93-856C-0B6AE39B206B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{399311D7-B5AA-4A93-856C-0B6AE39B206B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{399311D7-B5AA-4A93-856C-0B6AE39B206B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{80B46CDF-00B2-4E62-91C4-9361696AAC70}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{80B46CDF-00B2-4E62-91C4-9361696AAC70}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{80B46CDF-00B2-4E62-91C4-9361696AAC70}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{80B46CDF-00B2-4E62-91C4-9361696AAC70}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
