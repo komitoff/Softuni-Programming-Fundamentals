@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "E1.RemoveNegativeAndReverse
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "E2.AppendLists", "E2.AppendLists\E2.AppendLists.csproj", "{A99709E2-2FA3-4CD7-9D48-CEBBB8C147B3}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "E5.SortNumbers", "E5.SortNumbers\E5.SortNumbers.csproj", "{4CA6892D-B1E3-464D-AAFE-0894EA6B5A3F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{A99709E2-2FA3-4CD7-9D48-CEBBB8C147B3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A99709E2-2FA3-4CD7-9D48-CEBBB8C147B3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A99709E2-2FA3-4CD7-9D48-CEBBB8C147B3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4CA6892D-B1E3-464D-AAFE-0894EA6B5A3F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4CA6892D-B1E3-464D-AAFE-0894EA6B5A3F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4CA6892D-B1E3-464D-AAFE-0894EA6B5A3F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4CA6892D-B1E3-464D-AAFE-0894EA6B5A3F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
