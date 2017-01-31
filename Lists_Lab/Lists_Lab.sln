@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "E5.SortNumbers", "E5.SortNu
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "E6.SquareNumbers", "E6.SquareNumbers\E6.SquareNumbers.csproj", "{E2C97625-75DB-4E2B-9F91-A6C5A1DB6E43}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "E3.AdjacentNumbers", "E3.AdjacentNumbers\E3.AdjacentNumbers.csproj", "{B1EA727F-058E-4CAE-8FF5-F21DF5D8D849}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{E2C97625-75DB-4E2B-9F91-A6C5A1DB6E43}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E2C97625-75DB-4E2B-9F91-A6C5A1DB6E43}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E2C97625-75DB-4E2B-9F91-A6C5A1DB6E43}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B1EA727F-058E-4CAE-8FF5-F21DF5D8D849}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B1EA727F-058E-4CAE-8FF5-F21DF5D8D849}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B1EA727F-058E-4CAE-8FF5-F21DF5D8D849}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B1EA727F-058E-4CAE-8FF5-F21DF5D8D849}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

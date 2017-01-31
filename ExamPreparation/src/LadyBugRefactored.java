@@ -7,7 +7,7 @@ public class LadyBugRefactored {
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
         int length = Integer.parseInt(reader.readLine());
         String [] field = reader.readLine().split("\\s+");
-        int [] fieldCells = new int[length];
+        long [] fieldCells = new long[length];
         for (int i = 0; i < length; i++) {
             fieldCells[i] = 0;
         }
@@ -32,12 +32,12 @@ public class LadyBugRefactored {
             InputCommand = reader.readLine();
         }
 
-        for (int cell : fieldCells) {
+        for (long cell : fieldCells) {
             System.out.print(cell + " ");
         }
     }
 
-    private static int [] moveRight(int startPosition, int count, int [] fieldCells) {
+    private static long [] moveRight(int startPosition, int count, long [] fieldCells) {
         boolean flag = true;
         if (startPosition >= fieldCells.length) {
             return fieldCells;
@@ -50,7 +50,7 @@ public class LadyBugRefactored {
             return fieldCells;
         }
         fieldCells[startPosition] = 0;
-        for (int i = startPosition + count; i < fieldCells.length; i++) {
+        for (int i = startPosition + count; i < fieldCells.length; i+=count) {
             if (fieldCells[i] == 0) {
                 fieldCells[i] = 1;
                 break;
@@ -60,7 +60,7 @@ public class LadyBugRefactored {
         return fieldCells;
     }
 
-    private static int[] moveLeft(int startPosition, int count, int [] fieldCells) {
+    private static long[] moveLeft(int startPosition, int count, long [] fieldCells) {
         boolean flag = true;
         if (startPosition >= fieldCells.length) {
             return fieldCells;
