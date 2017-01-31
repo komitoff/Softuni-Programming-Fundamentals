@@ -12,18 +12,14 @@ class AdjacentNumbers
         while (flag)
         {
             flag = false;
-            for (int i = 0; i < numbers.Count; i++)
+            for (int i = 0; i < numbers.Count - 1; i++)
             {
-                for (int j = i + 1; j < numbers.Count; j++)
+                if (numbers[i] == numbers[i + 1])
                 {
-                    if (numbers[i] == numbers[j])
-                    {
-                        numbers[i] = numbers[i] + numbers[j];
-                        numbers.RemoveAt(j);
-                        flag = true;
-                        break;
-
-                    }
+                    numbers[i] = numbers[i] + numbers[i + 1];
+                    numbers.RemoveAt(i + 1);
+                    flag = true;
+                    break;
                 }
             }
         }

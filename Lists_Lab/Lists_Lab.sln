@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "E6.SquareNumbers", "E6.Squa
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "E3.AdjacentNumbers", "E3.AdjacentNumbers\E3.AdjacentNumbers.csproj", "{B1EA727F-058E-4CAE-8FF5-F21DF5D8D849}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "E4.SplitByWordCasing", "E4.SplitByWordCasing\E4.SplitByWordCasing.csproj", "{EF9A96B2-1CE0-48F6-A329-37DFE3C2BC36}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{B1EA727F-058E-4CAE-8FF5-F21DF5D8D849}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B1EA727F-058E-4CAE-8FF5-F21DF5D8D849}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B1EA727F-058E-4CAE-8FF5-F21DF5D8D849}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EF9A96B2-1CE0-48F6-A329-37DFE3C2BC36}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EF9A96B2-1CE0-48F6-A329-37DFE3C2BC36}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EF9A96B2-1CE0-48F6-A329-37DFE3C2BC36}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EF9A96B2-1CE0-48F6-A329-37DFE3C2BC36}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
