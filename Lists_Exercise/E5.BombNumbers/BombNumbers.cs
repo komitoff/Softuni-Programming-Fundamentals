@@ -7,21 +7,29 @@ class BombNumbers
     static void Main()
     {
         List<int> numbers = Console.ReadLine().Split(' ').Select(int.Parse).ToList();
-        int index = int.Parse(Console.ReadLine());
+        int[] indexAndCount = Console.ReadLine().Split(' ').Select(int.Parse).ToArray();
+        int index = indexAndCount[0];
+        int count = indexAndCount[1];
+        int sum = Bomb(numbers, index, count);
+        Console.WriteLine(sum);
+
+    }
+
+    private static int Bomb(List<int> numbers,int index, int count)
+    {
         int sum = 0;
-
-        if (index < 0 || index >= numbers.Count)
+        if (count > 0 && count < numbers.Count)
         {
-            foreach (var number in numbers)
-            {
-                sum += number;
-            }
-            Console.WriteLine(sum);
-        }
-        else
-        {
-
+            numbers.RemoveRange(index, count);
+            numbers.Reverse();
+            numbers.RemoveRange(index , count);
+            
         }
 
+        foreach (var number in numbers)
+        {
+            sum += number;
+        }
+        return sum;
     }
 }
