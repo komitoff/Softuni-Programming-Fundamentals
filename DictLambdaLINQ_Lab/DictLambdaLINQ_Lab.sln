@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "E1.CountRealNumbers", "E1.C
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "E2.OddOccurrences", "E2.OddOccurrences\E2.OddOccurrences.csproj", "{FCFB1911-D542-4EE1-96FF-EF7443EB18DD}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "E4.Largest3Numbers", "E4.Largest3Numbers\E4.Largest3Numbers.csproj", "{9642ECDB-3A3A-4B25-8BE3-CB08F19E59A4}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{FCFB1911-D542-4EE1-96FF-EF7443EB18DD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FCFB1911-D542-4EE1-96FF-EF7443EB18DD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FCFB1911-D542-4EE1-96FF-EF7443EB18DD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9642ECDB-3A3A-4B25-8BE3-CB08F19E59A4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9642ECDB-3A3A-4B25-8BE3-CB08F19E59A4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9642ECDB-3A3A-4B25-8BE3-CB08F19E59A4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9642ECDB-3A3A-4B25-8BE3-CB08F19E59A4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
