@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "E4.Largest3Numbers", "E4.La
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "E5.ShortWordSorted", "E5.ShortWordSorted\E5.ShortWordSorted.csproj", "{A3D15909-E393-40FC-8FB2-D2FE71BC46E5}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "E6.FoldAndSum", "E6.FoldAndSum\E6.FoldAndSum.csproj", "{72EADE30-2659-4500-93CA-8BF9198928C3}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{A3D15909-E393-40FC-8FB2-D2FE71BC46E5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A3D15909-E393-40FC-8FB2-D2FE71BC46E5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A3D15909-E393-40FC-8FB2-D2FE71BC46E5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{72EADE30-2659-4500-93CA-8BF9198928C3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{72EADE30-2659-4500-93CA-8BF9198928C3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{72EADE30-2659-4500-93CA-8BF9198928C3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{72EADE30-2659-4500-93CA-8BF9198928C3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
