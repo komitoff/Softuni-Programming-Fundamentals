@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "E5.ShortWordSorted", "E5.Sh
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "E6.FoldAndSum", "E6.FoldAndSum\E6.FoldAndSum.csproj", "{72EADE30-2659-4500-93CA-8BF9198928C3}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "E3.MathOperations", "E3.MathOperations\E3.MathOperations.csproj", "{130CEBFB-8503-48A0-9321-92A44314C74D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{72EADE30-2659-4500-93CA-8BF9198928C3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{72EADE30-2659-4500-93CA-8BF9198928C3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{72EADE30-2659-4500-93CA-8BF9198928C3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{130CEBFB-8503-48A0-9321-92A44314C74D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{130CEBFB-8503-48A0-9321-92A44314C74D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{130CEBFB-8503-48A0-9321-92A44314C74D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{130CEBFB-8503-48A0-9321-92A44314C74D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
