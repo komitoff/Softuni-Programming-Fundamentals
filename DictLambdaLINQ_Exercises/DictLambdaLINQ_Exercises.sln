@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "E3.MinerTask", "E3.MinerTas
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "E4.FixEmails", "E4.FixEmails\E4.FixEmails.csproj", "{21A1EDB6-A609-40C1-B27B-E356283C0FA9}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "E5.HandsOfCards", "E5.HandsOfCards\E5.HandsOfCards.csproj", "{C03E7060-DB66-4F6C-B664-6C03CF9DA74E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{21A1EDB6-A609-40C1-B27B-E356283C0FA9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{21A1EDB6-A609-40C1-B27B-E356283C0FA9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{21A1EDB6-A609-40C1-B27B-E356283C0FA9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C03E7060-DB66-4F6C-B664-6C03CF9DA74E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C03E7060-DB66-4F6C-B664-6C03CF9DA74E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C03E7060-DB66-4F6C-B664-6C03CF9DA74E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C03E7060-DB66-4F6C-B664-6C03CF9DA74E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
