@@ -7,7 +7,7 @@ class HandsOfCards
     static void Main()
     {
         string input = Console.ReadLine();
-        var playersScore = new Dictionary<string, Dictionary<List<string>, int>>();
+        var playersScore = new Dictionary<string, List<string>>();
 
         while (!input.Equals("JOKER"))
         {
@@ -17,9 +17,22 @@ class HandsOfCards
             List<string> cards = hand.Split(',').ToList();
             if (!playersScore.ContainsKey(player))
             {
-                playersScore.Add(player, new Dictionary<List<string>, int>);
+                playersScore.Add(player, new List<string>());
             }
+            foreach (var card in cards)
+            {
+                if (!playersScore[player].Contains(card))
+                {
+                    playersScore[player].Add(card);
+                }
+            }
+            input = Console.ReadLine();
+        }
 
+        foreach (var player in playersScore)
+        {
+            int strength = CalcHandStrength(player.Value);
+            Console.WriteLine($"{player.Key}: {strength}");
         }
 
 
@@ -27,7 +40,7 @@ class HandsOfCards
 
 
 
-    private static int CalcHandStrength(HashSet<string> uniqueCards)
+    private static int CalcHandStrength(List<string> uniqueCards)
     {
         int strength = 0;
         //fill the types of the cards
