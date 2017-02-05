@@ -7,10 +7,14 @@ class PhoneBook
     static void Main()
     {
         string cmdLine = Console.ReadLine();
-        Dictionary<string, string> phoneBook = new Dictionary<string, string>();
+        SortedDictionary<string, string> phoneBook = new SortedDictionary<string, string>();
         while (!cmdLine.Equals("END"))
         {
             string[] data = cmdLine.Split(' ');
+            if (data[0].Equals("ListAll"))
+            {
+                ListAll(phoneBook);
+            }
             if (data[0].Equals("A"))
             {
                 AddContact(data[1], data[2], phoneBook);
@@ -23,7 +27,15 @@ class PhoneBook
         }
     }
 
-    private static void AddContact(string name, string phoneNumber, Dictionary<string, string> phoneBook)
+    private static void ListAll(SortedDictionary<string, string> phoneBook)
+    {
+        foreach (var contact in phoneBook)
+        {
+            Console.WriteLine($"{contact.Key} -> {contact.Value}");
+        }
+    }
+
+    private static void AddContact(string name, string phoneNumber, SortedDictionary<string, string> phoneBook)
     {
         if (!phoneBook.ContainsKey(name))
         {
@@ -32,7 +44,7 @@ class PhoneBook
         phoneBook[name] = phoneNumber;
     }
 
-    private static void SearchContact(string name, Dictionary<string, string> phoneBook)
+    private static void SearchContact(string name, SortedDictionary<string, string> phoneBook)
     {
         if (phoneBook.ContainsKey(name))
         {
