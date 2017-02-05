@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ArrayModifier", "ArrayModif
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WaterSupplies", "WaterSupplies\WaterSupplies.csproj", "{45FBA7A1-166A-40B2-AE58-45DEE97F4EA3}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SoftuniKaraoke", "SoftuniKaraoke\SoftuniKaraoke.csproj", "{EC6EAF0E-1406-4C65-9E39-93F87A01FFB8}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{45FBA7A1-166A-40B2-AE58-45DEE97F4EA3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{45FBA7A1-166A-40B2-AE58-45DEE97F4EA3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{45FBA7A1-166A-40B2-AE58-45DEE97F4EA3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EC6EAF0E-1406-4C65-9E39-93F87A01FFB8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EC6EAF0E-1406-4C65-9E39-93F87A01FFB8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EC6EAF0E-1406-4C65-9E39-93F87A01FFB8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EC6EAF0E-1406-4C65-9E39-93F87A01FFB8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
