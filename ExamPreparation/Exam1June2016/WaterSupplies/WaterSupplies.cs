@@ -66,7 +66,7 @@ class WaterSupplies
             }
         }
 
-        
+        //if we have enough water.
         if (totalAmmount >= totalWaterNeeded)
         {
             Console.WriteLine("Enough water!");
