@@ -20,22 +20,22 @@ class WaterSupplies
         double totalWaterNeeded = 0;
         double currentAmmount = totalAmmount;
 
-        for (int i = 0; i < length; i++)
-        {
-            totalWaterNeeded += bottleCapacity - bottles[i];
-            currentAmmount -= (bottleCapacity - bottles[i]);
-
-            if (currentAmmount >= 0)
-            {
-                filledBottles[i] = 1;
-                bottlesLeft--;
-            }
-
-        }
-
         if (totalAmmount % 2 == 0)
         {
-            for (int i = 0; i < filledBottles.Length; i++)
+            for (long i = 0; i < length; i++)
+            {
+                totalWaterNeeded += bottleCapacity - bottles[i];
+                currentAmmount -= (bottleCapacity - bottles[i]);
+
+                if (currentAmmount >= 0)
+                {
+                    filledBottles[i] = 1;
+                    bottlesLeft--;
+                }
+
+            }
+
+            for (int i = 0; i < length; i++)
             {
                 if (filledBottles[i] == 0)
                 {
@@ -45,7 +45,19 @@ class WaterSupplies
         }
         else
         {
-            for (int i = filledBottles.Length - 1;  i >= 0; i--)
+            for (long i = length - 1; i >= 0; i--)
+            {
+                totalWaterNeeded += bottleCapacity - bottles[i];
+                currentAmmount -= (bottleCapacity - bottles[i]);
+
+                if (currentAmmount >= 0)
+                {
+                    filledBottles[i] = 1;
+                    bottlesLeft--;
+                }
+            }
+
+            for (long i = bottlesLeft - 1; i >= 0; i--)
             {
                 if (filledBottles[i] == 0)
                 {
@@ -53,7 +65,7 @@ class WaterSupplies
                 }
             }
         }
-        
+
         
         if (totalAmmount >= totalWaterNeeded)
         {
