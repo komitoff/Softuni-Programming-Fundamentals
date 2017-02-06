@@ -5,6 +5,8 @@ VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "E1.DayOfWeek", "E1.DayOfWeek\E1.DayOfWeek.csproj", "{525FE0D9-AD83-44CC-9534-E1A47B942FCE}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "E2.RandomizeWords", "E2.RandomizeWords\E2.RandomizeWords.csproj", "{A8944B00-9600-41DF-A815-A7D6EC938EC0}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{525FE0D9-AD83-44CC-9534-E1A47B942FCE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{525FE0D9-AD83-44CC-9534-E1A47B942FCE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{525FE0D9-AD83-44CC-9534-E1A47B942FCE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A8944B00-9600-41DF-A815-A7D6EC938EC0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A8944B00-9600-41DF-A815-A7D6EC938EC0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A8944B00-9600-41DF-A815-A7D6EC938EC0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A8944B00-9600-41DF-A815-A7D6EC938EC0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
