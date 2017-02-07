@@ -44,7 +44,7 @@ class SoftuniKaraoke
         {
             Console.WriteLine($"{person.Key}: {person.Value.Count} awards");
             string[] awards = awardedParticipants[person.Key].OrderBy(x => x).ToArray();
-            foreach (var award in awards)
+            foreach (var award in awardedParticipants[person.Key].OrderBy(x => x))
             {
                 Console.WriteLine($"--{award}");
             }
