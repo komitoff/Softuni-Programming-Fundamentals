@@ -15,6 +15,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "E5.ClosestTwoPoints", "E5.C
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "E6.RectanglePosition", "E6.RectanglePosition\E6.RectanglePosition.csproj", "{EFC4528B-5AE3-4670-911B-143D5486B73F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "E7.SalesReport", "E7.SalesReport\E7.SalesReport.csproj", "{9A530FD2-31CE-4559-A06D-A8CD8ADE3846}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -45,6 +47,10 @@ Global
 		{EFC4528B-5AE3-4670-911B-143D5486B73F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EFC4528B-5AE3-4670-911B-143D5486B73F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EFC4528B-5AE3-4670-911B-143D5486B73F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9A530FD2-31CE-4559-A06D-A8CD8ADE3846}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9A530FD2-31CE-4559-A06D-A8CD8ADE3846}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9A530FD2-31CE-4559-A06D-A8CD8ADE3846}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9A530FD2-31CE-4559-A06D-A8CD8ADE3846}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
