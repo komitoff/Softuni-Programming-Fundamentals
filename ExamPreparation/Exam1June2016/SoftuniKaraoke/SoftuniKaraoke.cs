@@ -18,8 +18,8 @@ class SoftuniKaraoke
         {
             aviableSongs[i] = aviableSongs[i].TrimStart();
         }
-        Dictionary<string, Dictionary<string, int>> awardedParticipants =
-            new Dictionary<string, Dictionary<string, int>>();
+        Dictionary<string, List<string>> awardedParticipants =
+            new Dictionary<string, List<string>>();
 
         string cmd = Console.ReadLine();
 
@@ -40,26 +40,27 @@ class SoftuniKaraoke
         {
             Console.WriteLine("No awards");
         }
-        foreach (var person in awardedParticipants)
+        foreach (var person in awardedParticipants.OrderByDescending(p => p.Value.Count).ThenBy(p => p.Key))
         {
-            Console.WriteLine($"{person.Key}: {person.Value.Values.Count} awards");
-            foreach (var award in person.Value)
+            Console.WriteLine($"{person.Key}: {person.Value.Count} awards");
+            string[] awards = awardedParticipants[person.Key].OrderBy(x => x).ToArray();
+            foreach (var award in awards)
             {
-                Console.WriteLine($"--{award.Key}");
+                Console.WriteLine($"--{award}");
             }
         }
     }
 
-    private static void AddAward(string participant, string song, string award, Dictionary<string, Dictionary<string, int>> awardedParticipants)
+    private static void AddAward(string participant, string song, string award, Dictionary<string, List<string>> awardedParticipants)
     {
         if (!awardedParticipants.ContainsKey(participant))
         {
-            awardedParticipants.Add(participant, new Dictionary<string, int>());
+            awardedParticipants.Add(participant,new List<string>());
         }
-        if (!awardedParticipants[participant].ContainsKey(award))
+        if (!awardedParticipants[participant].Contains(award))
         {
-            awardedParticipants[participant].Add(award, 0);
+            awardedParticipants[participant].Add(award);
         }
-        awardedParticipants[participant][award]++;
+
     }
 }
