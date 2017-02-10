@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "E2.AdvertisementMessage", "
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "E3.CircleIntersection", "E3.CircleIntersection\E3.CircleIntersection.csproj", "{9CE7EBD3-320C-4AE8-BE5B-97268CB1FFDD}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "E4.AverageGrades", "E4.AverageGrades\E4.AverageGrades.csproj", "{E97D9185-2428-43FF-B5CB-89CA31943146}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{9CE7EBD3-320C-4AE8-BE5B-97268CB1FFDD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9CE7EBD3-320C-4AE8-BE5B-97268CB1FFDD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9CE7EBD3-320C-4AE8-BE5B-97268CB1FFDD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E97D9185-2428-43FF-B5CB-89CA31943146}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E97D9185-2428-43FF-B5CB-89CA31943146}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E97D9185-2428-43FF-B5CB-89CA31943146}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E97D9185-2428-43FF-B5CB-89CA31943146}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
