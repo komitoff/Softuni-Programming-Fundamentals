@@ -8,18 +8,20 @@ public class RollyTheCoder
     {
         string input = Console.ReadLine();
         //event participants
-        Dictionary<string, List<string>> participantsForEvent =
-            new Dictionary<string, List<string>>();
+        Dictionary<string, HashSet<string>> participantsForEvent =
+            new Dictionary<string, HashSet<string>>();
         //id , event, participants
-        Dictionary<int, Dictionary<string, List<string>>> rollyEvenet = 
-            new Dictionary<int, Dictionary<string, List<string>>>();
+        Dictionary<long, Dictionary<string, List<string>>> rollyEvenet = 
+            new Dictionary<long, Dictionary<string, List<string>>>();
 
-        while (!input.Equals("Time For Code"))
+        bool flag = false;
+        while (!input.Equals("Time for Code"))
         {
+            flag = true;
             string trimmedEvent = null;
-            string[] info = input.Split();
+            string[] info = input.Split(new char[] { ' ' }, StringSplitOptions.RemoveEmptyEntries);
             //get id
-            int currentId = int.Parse(info[0]);
+            long currentId = int.Parse(info[0]);
             string currentEvent = info[1];
             List<string> currentParticipants = new List<string>();
 
@@ -27,28 +29,48 @@ public class RollyTheCoder
             if (IsValidEvent(currentEvent))
             {
                 trimmedEvent = TrimEvent(currentEvent);
-            }
 
-            for (int i = 2; i < info.Length; i++)
-            {
-                currentParticipants.Add(info[i]);
-            }
+                for (int i = 2; i < info.Length; i++)
+                {
+                    currentParticipants.Add(info[i]);
+                }
 
-            if (!rollyEvenet.ContainsKey(currentId))
-            {
-                rollyEvenet.Add(currentId, new Dictionary<string, List<string>>());
-            }
-            else
-            {
+                if (!rollyEvenet.ContainsKey(currentId))
+                {
+                    rollyEvenet.Add(currentId, new Dictionary<string, List<string>>());
+                    if (!rollyEvenet[currentId].ContainsKey(trimmedEvent))
+                    {
+                        rollyEvenet[currentId][trimmedEvent] = new List<string>();
+                        participantsForEvent[trimmedEvent] = new HashSet<string>();
+                    }
+                }
+
                 if (rollyEvenet[currentId].ContainsKey(trimmedEvent))
                 {
-
+                    foreach (var currentParticipant in currentParticipants)
+                    {
+                        rollyEvenet[currentId][trimmedEvent].Add(currentParticipant);
+                        participantsForEvent[trimmedEvent].Add(currentParticipant);
+                    }
                 }
             }
-            
 
             input = Console.ReadLine();
-        } 
+        }
+
+        if (flag)
+        {
+            foreach (var eve in participantsForEvent
+            .OrderByDescending(p => p.Value.Count))
+            {
+                Console.WriteLine($"{eve.Key} - {eve.Value.Count}");
+                foreach (var part in eve.Value
+                    .OrderBy(p => p))
+                {
+                    Console.WriteLine(part);
+                }
+            }
+        }
     }
 
     private static string TrimEvent(string currentEvent)
