@@ -19,7 +19,7 @@ public class RollyTheCoder
         {
             flag = true;
             string trimmedEvent = null;
-            string[] info = input.Split(new char[] { ' ' }, StringSplitOptions.RemoveEmptyEntries);
+            string[] info = input.Split(new char[] { ' ', '\t', '\r', '\n' }, StringSplitOptions.RemoveEmptyEntries);
             //get id
             long currentId = int.Parse(info[0]);
             string currentEvent = info[1];
@@ -32,7 +32,11 @@ public class RollyTheCoder
 
                 for (int i = 2; i < info.Length; i++)
                 {
-                    currentParticipants.Add(info[i]);
+                    if (IsValidParticipant(info[i]))
+                    {
+                        currentParticipants.Add(info[i]);
+                    }
+                    
                 }
 
                 if (!rollyEvenet.ContainsKey(currentId))
@@ -71,6 +75,15 @@ public class RollyTheCoder
                 }
             }
         }
+    }
+
+    private static bool IsValidParticipant(string participant)
+    {
+        if (participant[0].Equals('@'))
+        {
+            return true;
+        }
+        return false;
     }
 
     private static string TrimEvent(string currentEvent)
