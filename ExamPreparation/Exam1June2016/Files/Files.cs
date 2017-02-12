@@ -9,7 +9,7 @@ public class Files
     {
         int count = int.Parse(Console.ReadLine());
         //root dir and the file + extension + size
-        SortedDictionary<string, List<RunnableFile>> rootFiles = 
+        SortedDictionary<string, List<RunnableFile>> rootFiles =
             new SortedDictionary<string, List<RunnableFile>>();
 
 
