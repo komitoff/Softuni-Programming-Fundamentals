@@ -11,8 +11,8 @@ public class RollyTheCoder
         Dictionary<string, HashSet<string>> participantsForEvent =
             new Dictionary<string, HashSet<string>>();
         //id , event, participants
-        Dictionary<long, Dictionary<string, List<string>>> rollyEvenet = 
-            new Dictionary<long, Dictionary<string, List<string>>>();
+        Dictionary<string, Dictionary<string, List<string>>> rollyEvenet = 
+            new Dictionary<string, Dictionary<string, List<string>>>();
 
         bool flag = false;
         while (!input.Equals("Time for Code"))
@@ -20,19 +20,17 @@ public class RollyTheCoder
             flag = true;
             string trimmedEvent = null;
             string[] info = input.Split(new char[] { ' ', '\t', '\r', '\n' }, StringSplitOptions.RemoveEmptyEntries);
-            //get id
-            long currentId = int.Parse(info[0]);
+            string currentId = info[0];
             string currentEvent = info[1];
             List<string> currentParticipants = new List<string>();
-
-            //if the event contains hash tag
-            if (IsValidEvent(currentEvent))
+            
+            if (currentEvent.Contains("#"))
             {
                 trimmedEvent = TrimEvent(currentEvent);
 
                 for (int i = 2; i < info.Length; i++)
                 {
-                    if (IsValidParticipant(info[i]))
+                    if (info[i].Contains("@"))
                     {
                         currentParticipants.Add(info[i]);
                     }
@@ -77,14 +75,6 @@ public class RollyTheCoder
         }
     }
 
-    private static bool IsValidParticipant(string participant)
-    {
-        if (participant[0].Equals('@'))
-        {
-            return true;
-        }
-        return false;
-    }
 
     private static string TrimEvent(string currentEvent)
     {
@@ -92,12 +82,4 @@ public class RollyTheCoder
 
     }
 
-    private static bool IsValidEvent(string currentEvent)
-    {
-        if (currentEvent[0].Equals('#'))
-        {
-            return true;
-        }
-        return false;
-    }
 }

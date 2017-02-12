@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MatrixOperator", "MatrixOpe
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RollyTheCoder", "RollyTheCoder\RollyTheCoder.csproj", "{EC1A07B7-23E7-4AA8-80F2-8A3F0D104593}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SoftuniCoffeeOrders", "SoftuniCoffeeOrders\SoftuniCoffeeOrders.csproj", "{E2A9B1FB-7182-4921-8836-72B4999EBF29}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{EC1A07B7-23E7-4AA8-80F2-8A3F0D104593}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EC1A07B7-23E7-4AA8-80F2-8A3F0D104593}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EC1A07B7-23E7-4AA8-80F2-8A3F0D104593}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E2A9B1FB-7182-4921-8836-72B4999EBF29}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E2A9B1FB-7182-4921-8836-72B4999EBF29}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E2A9B1FB-7182-4921-8836-72B4999EBF29}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E2A9B1FB-7182-4921-8836-72B4999EBF29}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
