@@ -38,19 +38,29 @@ public class Files
         {
             bool flag = true;
             List<string> printed = new List<string>();
-            List<RunnableFile> filesList = rootFiles[command[2]];
             string extension = command[0];
-            foreach (var file in filesList
-                .OrderByDescending(f => f.Size)
-                .ThenBy(f => f.Name)
+            List<RunnableFile> filesList = rootFiles[command[2]];
+            Dictionary<string, long> uniqueList = new Dictionary<string, long>();
+            for (int i = 0; i < filesList.Count; i++)
+            {
+                if (filesList[i].Extension.Equals(extension))
+                {
+                    if (!uniqueList.ContainsKey(filesList[i].Name))
+                    {
+                        uniqueList.Add(filesList[i].Name, 0);
+                    }
+                    uniqueList[filesList[i].Name] = filesList[i].Size;
+                }
+                
+            }
+           
+            foreach (var file in uniqueList
+                .OrderByDescending(f => f.Value)
+                .ThenBy(f => f.Key)
                 .Distinct())
             {
-                if (file.Extension.Equals(extension) && !printed.Contains(file.Name))
-                {
-                    Console.WriteLine($"{file.Name}.{file.Extension} - {file.Size} KB");
-                    printed.Add(file.Name);
-                    flag = false;
-                }
+                Console.WriteLine($"{file.Key}.{extension} - {file.Value} KB");
+                flag = false;
             }
             if (flag)
             {
