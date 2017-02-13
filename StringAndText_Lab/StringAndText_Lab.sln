@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "E1.ReverseString", "E1.Reve
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "E2.CountSubstringOccurrences", "E2.CountSubstringOccurrences\E2.CountSubstringOccurrences.csproj", "{5CEE18CB-7B58-4582-8443-02C8A72FB64D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "E3.TextFilter", "E3.TextFilter\E3.TextFilter.csproj", "{E919240A-E0D7-4AD1-9CB9-9AE297E22DA8}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{5CEE18CB-7B58-4582-8443-02C8A72FB64D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5CEE18CB-7B58-4582-8443-02C8A72FB64D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5CEE18CB-7B58-4582-8443-02C8A72FB64D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E919240A-E0D7-4AD1-9CB9-9AE297E22DA8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E919240A-E0D7-4AD1-9CB9-9AE297E22DA8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E919240A-E0D7-4AD1-9CB9-9AE297E22DA8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E919240A-E0D7-4AD1-9CB9-9AE297E22DA8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
