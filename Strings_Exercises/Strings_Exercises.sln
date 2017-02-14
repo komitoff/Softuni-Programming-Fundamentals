@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConvertBase10ToBaseN", "Con
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConvertNBaseTo10", "ConvertNBaseTo10\ConvertNBaseTo10.csproj", "{70916C5A-9136-4DDB-9648-4ACE5E406708}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnicodeCharacters", "UnicodeCharacters\UnicodeCharacters.csproj", "{4C26A1FA-1542-4508-A213-6CD798B441CB}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{70916C5A-9136-4DDB-9648-4ACE5E406708}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{70916C5A-9136-4DDB-9648-4ACE5E406708}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{70916C5A-9136-4DDB-9648-4ACE5E406708}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4C26A1FA-1542-4508-A213-6CD798B441CB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4C26A1FA-1542-4508-A213-6CD798B441CB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4C26A1FA-1542-4508-A213-6CD798B441CB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4C26A1FA-1542-4508-A213-6CD798B441CB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
