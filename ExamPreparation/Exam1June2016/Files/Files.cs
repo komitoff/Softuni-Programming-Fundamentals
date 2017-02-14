@@ -8,97 +8,62 @@ public class Files
     static void Main()
     {
         int count = int.Parse(Console.ReadLine());
-        Dictionary<string, List<RunnableFile>> dir =
-            new Dictionary<string, List<RunnableFile>>();
+        //root - full file name - size
+        Dictionary<string, Dictionary<string, long>> fileData =
+            new Dictionary<string, Dictionary<string, long>>();
 
-        
+        //full file name - size
+        Dictionary<string, long> fileAndSize = 
+            new Dictionary<string, long>();
+
         for (int i = 0; i < count; i++)
         {
-            string[] path = Console.ReadLine().Split('\\');
+            string[] input = Console.ReadLine().Split('\\');
+            string fileInfoAndSize = input[input.Length - 1];
+            string[] fileInfo = fileInfoAndSize.Split(';');
+            string rootDir = input[0];
+            string fullFileName = fileInfo[0];
+            long fileSize = long.Parse(fileInfo[1]);
 
-            string rootDir = path[0];
-            string fullFileSpec = path[path.Length - 1];
-
-            string[] fileNameAndSize = fullFileSpec.Split(';');
-
-            long size = long.Parse(fileNameAndSize[1]);
-            string[] fileNameAndExtension = GetFileName(fileNameAndSize[0]);
-
-            string fileName = fileNameAndExtension[0];
-            string extension = fileNameAndExtension[1];
-
-            RunnableFile currentFile = new RunnableFile()
+            if (!fileData.ContainsKey(rootDir))
             {
-                Name = fileName,
-                Size = size,
-                Extension = extension
-            };
-
-            if (!dir.ContainsKey(rootDir))
-            {
-                dir[rootDir] = new List<RunnableFile>();
+                fileData[rootDir] = new Dictionary<string, long>();
             }
-            dir[rootDir].Add(currentFile);
-            for (int j = 0; j < dir[rootDir].Count; j++)
+            if (fileData[rootDir].ContainsKey(fullFileName))
             {
-                if (dir[rootDir][j].Name.Equals(currentFile.Name))
-                {
-                    dir[rootDir][j] = currentFile;
-                }
+                fileData[rootDir][fullFileName] = 0;
             }
+            fileData[rootDir][fullFileName] = fileSize;
 
         }
 
-        string[] command = Console.ReadLine().Split();
-        string root = command[2];
-        string type = command[0];
-        bool flag = false;
-        if (dir.ContainsKey(root))
+        string[] cmd = Console.ReadLine().Split();
+        string typeSubj = cmd[0];
+        string rootSubj = cmd[cmd.Length - 1];
+        string realTypeSubj = typeSubj.Insert(0, ".");
+
+        bool areThereResults = false;
+        if (fileData.ContainsKey(rootSubj))
         {
-            for (int i = 0; i < dir[root].Count; i++)
+            fileAndSize = fileData[rootSubj];
+            
+            foreach (var file in fileAndSize
+                .OrderByDescending(f => f.Value)
+                .ThenBy(f => f.Key))
             {
-                if (dir[root][i].Extension.Equals(type))
+                if (file.Key.Contains(realTypeSubj))
                 {
-                    flag = true;
+                    Console.WriteLine($"{file.Key} - {file.Value} KB");
+                    areThereResults = true;
                 }
             }
         }
-        if(flag)
-        {
-            foreach (var file in dir[root]
-                .OrderBy(f => f.Size)
-                .ThenBy(f => f.Name)
-                .Where(f => f.Extension.Equals(type)))
-            {
-                Console.WriteLine($"{file.Name}.{file.Extension} - {file.Size} KB");
-            }
-        }
-        else
+
+        if (!areThereResults)
         {
             Console.WriteLine("No");
         }
-    }
-
-    private static string[] GetFileName(string name)
-    {
-        string[] fileNameAndExtension = new string[2];
-        int index = name.LastIndexOf('.');
-        string extension = name.Substring(index + 1, name.Length - index - 1);
-        string fileName = name.Substring(0, index);
-        fileNameAndExtension[0] = fileName;
-        fileNameAndExtension[1] = extension;
-        return fileNameAndExtension;
+        
     }
 }
 
-//public class RunnableFile
-//{
-//    public string Name { get; set; }
-//    public string Extension { get; set; }
-//    public long Size { get; set; }
-
-//    public static implicit operator List<object>(RunnableFile v)
-//    {
-//        throw new NotImplementedException();
-//    }
-//}
