@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConvertNBaseTo10", "Convert
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnicodeCharacters", "UnicodeCharacters\UnicodeCharacters.csproj", "{4C26A1FA-1542-4508-A213-6CD798B441CB}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CharacterMultiplier", "CharacterMultiplier\CharacterMultiplier.csproj", "{C27C3E28-9DBC-4352-A77A-12596252FCBE}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{4C26A1FA-1542-4508-A213-6CD798B441CB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4C26A1FA-1542-4508-A213-6CD798B441CB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4C26A1FA-1542-4508-A213-6CD798B441CB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C27C3E28-9DBC-4352-A77A-12596252FCBE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C27C3E28-9DBC-4352-A77A-12596252FCBE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C27C3E28-9DBC-4352-A77A-12596252FCBE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C27C3E28-9DBC-4352-A77A-12596252FCBE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
