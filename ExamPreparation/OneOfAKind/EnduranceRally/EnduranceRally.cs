@@ -39,13 +39,13 @@ public class EnduranceRally
             for (int j = 0; j < zones.Count; j++)
             {
                 currentDriverFuel -= zones[j];
-                if (currentDriverFuel > 0)
+                if (currentDriverFuel < 0)
                 {
-                    reached++;
+                    break;
                 }
                 else
                 {
-                    break;
+                    reached++;
                 }
             }
 

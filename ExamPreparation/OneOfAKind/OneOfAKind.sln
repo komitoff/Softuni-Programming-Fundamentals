@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EnduranceRally", "Endurance
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SomeTests", "SomeTests\SomeTests.csproj", "{8D02BEA3-8C12-4335-8315-E79D20D3F4A1}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WinningTicket", "WinningTicket\WinningTicket.csproj", "{7E74724F-464D-42D5-BC0E-44C66CC433D5}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{8D02BEA3-8C12-4335-8315-E79D20D3F4A1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8D02BEA3-8C12-4335-8315-E79D20D3F4A1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8D02BEA3-8C12-4335-8315-E79D20D3F4A1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7E74724F-464D-42D5-BC0E-44C66CC433D5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7E74724F-464D-42D5-BC0E-44C66CC433D5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7E74724F-464D-42D5-BC0E-44C66CC433D5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7E74724F-464D-42D5-BC0E-44C66CC433D5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
