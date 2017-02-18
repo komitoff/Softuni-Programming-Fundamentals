@@ -7,6 +7,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SinoTheWalker", "SinoTheWal
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SoftuniKaraoke", "SoftuniKaraoke\SoftuniKaraoke.csproj", "{019EF471-EE82-4176-9356-C927DE6A75AB}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EnduranceRally", "EnduranceRally\EnduranceRally.csproj", "{4A036543-67F0-41E0-B7A3-8CD958B36C50}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SomeTests", "SomeTests\SomeTests.csproj", "{8D02BEA3-8C12-4335-8315-E79D20D3F4A1}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +25,14 @@ Global
 		{019EF471-EE82-4176-9356-C927DE6A75AB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{019EF471-EE82-4176-9356-C927DE6A75AB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{019EF471-EE82-4176-9356-C927DE6A75AB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4A036543-67F0-41E0-B7A3-8CD958B36C50}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4A036543-67F0-41E0-B7A3-8CD958B36C50}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4A036543-67F0-41E0-B7A3-8CD958B36C50}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4A036543-67F0-41E0-B7A3-8CD958B36C50}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8D02BEA3-8C12-4335-8315-E79D20D3F4A1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8D02BEA3-8C12-4335-8315-E79D20D3F4A1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8D02BEA3-8C12-4335-8315-E79D20D3F4A1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8D02BEA3-8C12-4335-8315-E79D20D3F4A1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
