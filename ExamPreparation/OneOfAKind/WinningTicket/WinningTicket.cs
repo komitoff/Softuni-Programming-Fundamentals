@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 
 public class WinningTicket
@@ -13,39 +14,36 @@ public class WinningTicket
             .Split(',')
             .Select(p => p.Trim())
             .ToArray();
-        char[] winningSymbols = new char[] { '@', '$', '#', '^' };
+
+        string pattern = @"[$@#^]{6,}";
+        Regex rgx = new Regex(pattern);
+
         for (int i = 0; i < tickets.Length; i++)
         {
             if (tickets[i].Length != 20)
             {
-                Console.WriteLine($"Invalid ticket");
-                break;
+                Console.WriteLine($"invalid ticket");
+                continue;
             }
             string leftHalf = tickets[i].Substring(0, 10);
             string rightHalf = tickets[i].Substring(10, 10);
-            for (int j = 0; j < winningSymbols.Length; j++)
-            {
-                char currentWinningSymbol = winningSymbols[j];
-                int leftCount = leftHalf.Count(l => l == currentWinningSymbol);
-                int rightCount = rightHalf.Count(r => r == currentWinningSymbol);
+            Match left = rgx.Match(leftHalf);
+            Match right = rgx.Match(rightHalf);
+            string leftMatch = left.ToString();
+            string rightMatch = right.ToString();
 
-                if (leftCount >=6 && rightCount >= 6)
-                {
-                    if (leftCount + rightCount == 20)
-                    {
-                        Console.WriteLine($"ticket \"{tickets[i]}\" - 10{currentWinningSymbol} Jackpot!");
-                    }
-                    else
-                    {
-                        Console.WriteLine($"ticket \"{tickets[i]}\" - 10{currentWinningSymbol}");
-                    }
-                    break;
-                }
-                else if (j == 3)
-                {
-                    Console.WriteLine($"ticket \"{tickets[i]}\" - no match");
-                    
-                }
+            if (leftMatch.Length == 10 && rightMatch.Length == 10 && leftMatch.Equals(rightMatch))
+            {
+                Console.WriteLine($"ticket \"{tickets[i]}\" - {leftMatch.Length}{leftMatch[0]} Jackpot!");
+            }
+            else if (leftMatch.Length >= 6 && rightMatch.Length >= 6 && leftMatch[0].Equals(rightMatch[0]))
+            {
+                int minLen = Math.Min(leftMatch.Length, rightMatch.Length);
+                Console.WriteLine($"ticket \"{tickets[i]}\" - {minLen}{leftMatch[0]}");
+            }
+            else
+            {
+                Console.WriteLine($"ticket \"{tickets[i]}\" - no match");
             }
         }
     }
