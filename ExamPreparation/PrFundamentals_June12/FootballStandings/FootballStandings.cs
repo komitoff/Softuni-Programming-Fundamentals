@@ -21,20 +21,13 @@ public class FootballStandings
         {
             string[] tokens = match.Split(new string[] { decryptCode }, StringSplitOptions.RemoveEmptyEntries);
             string matchResult = tokens[tokens.Length - 1];
-            Console.WriteLine(matchResult);
-            string[] teams = new string[2];
-            for (int i = 0, j = 0; i < tokens.Length; i++)
-            {
-                if (tokens[i].IndexOf(decryptCode) != -1 && tokens[i].LastIndexOf(decryptCode) != -1)
-                {
-                    teams[j] = tokens[i];
-                    j++;
-                }
-            }
-            foreach (var tea in teams)
-            {
-                Console.WriteLine(tea);
-            }
+            string teamA = String.Format(String.Join("", tokens[0].ToUpper().Reverse().ToArray()));
+            string teamB = String.Format(String.Join("", tokens[2].ToUpper().Reverse().ToArray()));
+            string[] scoreFull = tokens[3].Split().ToArray();
+            long[] score = (scoreFull.Length == 1 ? scoreFull[0] : scoreFull[1]).Split(':').Select(long.Parse).ToArray();
+
+            Console.WriteLine(teamA); Console.WriteLine(teamB);
+            Console.WriteLine(string.Join(", ", score));
             match = Console.ReadLine().ToUpper();
         }
     }
