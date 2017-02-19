@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FootballStandings", "Footba
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RageQuit", "RageQuit\RageQuit.csproj", "{F7CB6F28-785D-4B16-88CF-C2254865368B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CommandInterpreter", "CommandInterpreter\CommandInterpreter.csproj", "{F18FC183-DD3E-40EA-A4C3-98B547769A19}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{F7CB6F28-785D-4B16-88CF-C2254865368B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F7CB6F28-785D-4B16-88CF-C2254865368B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F7CB6F28-785D-4B16-88CF-C2254865368B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F18FC183-DD3E-40EA-A4C3-98B547769A19}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F18FC183-DD3E-40EA-A4C3-98B547769A19}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F18FC183-DD3E-40EA-A4C3-98B547769A19}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F18FC183-DD3E-40EA-A4C3-98B547769A19}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
