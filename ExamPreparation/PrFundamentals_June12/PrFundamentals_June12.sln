@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Numbers", "Numbers\Numbers.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SoftuniCoffeeOrders", "SoftuniCoffeeOrders\SoftuniCoffeeOrders.csproj", "{03AC6B76-1E67-423C-B9FC-E129C83C7DE7}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FootballStandings", "FootballStandings\FootballStandings.csproj", "{434D563B-7BF0-4C84-BA9D-BA5EF328B541}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{03AC6B76-1E67-423C-B9FC-E129C83C7DE7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{03AC6B76-1E67-423C-B9FC-E129C83C7DE7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{03AC6B76-1E67-423C-B9FC-E129C83C7DE7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{434D563B-7BF0-4C84-BA9D-BA5EF328B541}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{434D563B-7BF0-4C84-BA9D-BA5EF328B541}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{434D563B-7BF0-4C84-BA9D-BA5EF328B541}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{434D563B-7BF0-4C84-BA9D-BA5EF328B541}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
