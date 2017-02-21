@@ -9,8 +9,8 @@ public class Ladybugs
     {
         int fieldLength = int.Parse(Console.ReadLine());
         List<int> indexes = Console.ReadLine().Split().Select(int.Parse).ToList();
-        List<int> field = new List<int>(new int[fieldLength]);
-
+        int[] field = new int[fieldLength];
+        StringBuilder output = new StringBuilder();
         //fill the field with fellow bugs
         for (int i = 0; i < fieldLength; i++)
         {
@@ -23,11 +23,6 @@ public class Ladybugs
         string command = Console.ReadLine();
         while (!command.Equals("end"))
         {
-            if (fieldLength <= 0)
-            {
-                command = Console.ReadLine();
-                continue;
-            }
             string[] tokens = command.Split();
 
             int start = int.Parse(tokens[0]);
@@ -37,32 +32,45 @@ public class Ladybugs
             if (direction.Equals("left"))
                 count *= -1;
 
-            for (int j = start + count; j <= field.Count; j += count)
+            if (fieldLength <= 0
+                || start > field.Length
+                || start + count < 0
+                || start < 0)
             {
-                bool landed = false;
-                if (field[start] == 0 && landed)
+                command = Console.ReadLine();
+                continue;
+            }
+            bool landed = false;
+            var j = start + count;
+            while (!landed)
+            {
+                if (field[start] == 0 || landed)
                 {
                     break;
                 }
                 else
                 {
-                    field[start] = 0;
-                    if (j >= field.Count || j < 0)
+                    if (j >= field.Length || j < 0)
                     {
+                        field[start] = 0;
                         landed = true;
                         break;
                     }
-                    if (field[j] == 0)
+                    if (field[j] != 1)
                     {
+                        int tmp = field[start];
+                        field[start] = 0;
                         landed = true;
-                        field[j] = 1;
+                        field[j] = tmp;
                         break;
                     }
                 }
+                j += count;
             }
             command = Console.ReadLine();
         }
 
-        Console.WriteLine(string.Join(" ", field));
+        output.Append(string.Join(" ", field));
+        Console.WriteLine(output);
     }
 }
