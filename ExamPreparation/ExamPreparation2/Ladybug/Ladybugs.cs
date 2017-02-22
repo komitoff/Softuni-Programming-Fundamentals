@@ -29,48 +29,45 @@ public class Ladybugs
             int count = int.Parse(tokens[tokens.Length - 1]);
             string direction = tokens[1];
 
-            if (direction.Equals("left"))
-                count *= -1;
-
-            if (fieldLength <= 0
-                || start > field.Length
-                || start + count < 0
-                || start < 0)
+            //if the start position is out of the arr boundaries
+            if (start < 0 || start >= field.Length)
             {
                 command = Console.ReadLine();
                 continue;
             }
-            bool landed = false;
-            var j = start + count;
-            while (!landed)
-            {
-                if (field[start] == 0 || landed)
-                {
-                    break;
-                }
-                else
-                {
-                    if (j >= field.Length || j < 0)
-                    {
-                        field[start] = 0;
-                        landed = true;
-                        break;
-                    }
-                    if (field[j] != 1)
-                    {
-                        int tmp = field[start];
-                        field[start] = 0;
-                        landed = true;
-                        field[j] = tmp;
-                        break;
-                    }
-                }
-                j += count;
-            }
+
+            MoveLadybugs(start, count, direction, field);
             command = Console.ReadLine();
         }
 
         output.Append(string.Join(" ", field));
         Console.WriteLine(output);
+    }
+
+    private static void MoveLadybugs(int start, int count, string direction, int[] field)
+    {
+        bool landed = false;
+
+        if (direction.Equals("left"))
+            count *= -1;
+        
+        field[start] = 0;
+
+        while (!landed)
+        {
+            if (start + count >= field.Length
+                || start + count < 0 )
+            {
+                break;
+            }
+
+            if (field[start + count] == 0)
+            {
+                field[start + count] = 1;
+                landed = true;
+            }
+
+            count += count;
+        }
     }
 }
