@@ -14,47 +14,56 @@ public class CubicMessage
         while (!message.Equals("Over!"))
         {
             int number = int.Parse(Console.ReadLine());
-            string messagePattern = @"[a-zA-Z]{"+ number +"}";
-            Regex messageRegex = new Regex(messagePattern);
-            Match correctMsg = messageRegex.Match(message);
+            Regex rgx = new Regex(@"^([0-9]+)([a-zA-Z]{" + number + @"})([^a-zA-Z]*)$");
+            Match correctMsg = rgx.Match(message);
 
-            if (correctMsg.Length == 0)
+            if (correctMsg.Success)
             {
-                message = Console.ReadLine();
-                continue;
-            }
+                string word = correctMsg.Groups[2].ToString();
+                StringBuilder outputMsg = new StringBuilder();
+                outputMsg.Append($"{word} == ");
+                List<int> indexes = FindAllIndexes(correctMsg.Groups[1].ToString(), correctMsg.Groups[3].ToString());
 
-            string left = message.Substring(0, number);
-            string word = message.Substring(number, number);
-            List<char> symbols = word.ToList();
-            string right = message.Substring(number + number, number);
-            string indexesString = left + right;
-            
-            string pattern = @"[1-9]";
-            Regex rgx = new Regex(pattern);
-            MatchCollection matches = rgx.Matches(indexesString);
-            foreach (Match match in matches)
-            {
-                indexers.Add(int.Parse(match.ToString()));
-            }
-
-            for (int i = 0; i < indexers.Count; i++)
-            {
-                if (indexers[i] >= symbols.Count)
+                for (int i = 0; i < indexes.Count; i++)
                 {
-                    output.Append(" ");
+                    if (indexes[i] < 0 || indexes[i] >= word.Length)
+                    {
+                        outputMsg.Append(" ");
+                    }
+                    else
+                    {
+                        outputMsg.Append(word[indexes[i]]);
+                    }
                 }
-                else
-                {
-                    output.Append(symbols[indexers[i]]);
-                }
-                
+
+                Console.WriteLine(outputMsg);
+                outputMsg.Clear();
             }
-            Console.WriteLine($"{word} == {output}");
-            output.Clear();
 
             message = Console.ReadLine();
         }
 
+    }
+
+    private static List<int> FindAllIndexes(string leftGroup, string rightGroup)
+    {
+        List<int> indexes = new List<int>();
+        for (int i = 0; i < leftGroup.Length; i++)
+        {
+            if (Char.IsDigit(leftGroup[i]))
+            {
+                indexes.Add(int.Parse(leftGroup[i].ToString()));
+            }
+        }
+
+        for (int i = 0; i < rightGroup.Length; i++)
+        {
+            if (Char.IsDigit(rightGroup[i]))
+            {
+                indexes.Add(int.Parse(rightGroup[i].ToString()));
+            }
+        }
+
+        return indexes;
     }
 }
