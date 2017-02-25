@@ -36,7 +36,7 @@ public class ArrayManipulator
                 case "last":
                     count = int.Parse(tokens[1]);
                     evenOdd = tokens[2];
-                    //Console.WriteLine(Last(evenOdd, count, arr));
+                    Console.WriteLine(Last(evenOdd, count, arr));
                     break;
                 default: 
                     break;
@@ -47,17 +47,28 @@ public class ArrayManipulator
         Console.WriteLine($"[{output}]");   
     }
 
-    //private static string Last(string evenOdd, int count, int[] arr)
-    //{
+    private static string Last(string evenOdd, int count, int[] arr)
+    {
+        var parity = evenOdd == "even" ? 0 : 1;
+        var reversed = arr.Reverse().ToArray();
+        var filtered = reversed.Where(x => x % 2 == parity).Take(count).ToArray();
 
-    //}
+        if (count > arr.Length || count < 0)
+        {
+            return "Invalid count";
+        }
+        var reversedFiltered = filtered.Reverse().ToArray();
+        string numbers = string.Join(", ", reversedFiltered);
+        string output = "[" + numbers + "]";
+        return output;
+    }
 
     private static string First(string evenOdd, int count, int[] arr)
     {
         var parity = evenOdd == "even" ? 0 : 1;
         var filtered = arr.Where(x => x % 2 == parity).Take(count).ToArray();
 
-        if (count > arr.Length)
+        if (count > arr.Length || count < 0)
         {
             return "Invalid count";
         }
@@ -76,7 +87,7 @@ public class ArrayManipulator
         }
         else
         {
-            Console.WriteLine(filtered.Min());
+            Console.WriteLine(Array.LastIndexOf(arr, filtered.Min()));
         }
     }
 
@@ -90,15 +101,20 @@ public class ArrayManipulator
         }
         else
         {
-            Console.WriteLine(filtered.Max());
+            Console.WriteLine(Array.LastIndexOf(arr, filtered.Max()));
         }
         
     }
 
     private static int[] Exchange(int index, int[] arr)
     {
-        var left = arr.Take(index);
-        var right = arr.Skip(index);
+        if (index < 0 || index >= arr.Length)
+        {
+            Console.WriteLine("Invalid index");
+            return arr;
+        }
+        var left = arr.Take(index + 1);
+        var right = arr.Skip(index + 1);
         return right.Concat(left).ToArray();
     }
 }
