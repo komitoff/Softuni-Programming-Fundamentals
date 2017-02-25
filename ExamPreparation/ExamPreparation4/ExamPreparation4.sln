@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ArrayManipulator", "ArrayMa
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SomeTests", "SomeTests\SomeTests.csproj", "{1F62C58A-F013-4CBD-91FF-D940179463B7}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CubicMessage", "CubicMessage\CubicMessage.csproj", "{1A14151C-EACF-4822-8F9B-D9C2E6B93C40}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{1F62C58A-F013-4CBD-91FF-D940179463B7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1F62C58A-F013-4CBD-91FF-D940179463B7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1F62C58A-F013-4CBD-91FF-D940179463B7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1A14151C-EACF-4822-8F9B-D9C2E6B93C40}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1A14151C-EACF-4822-8F9B-D9C2E6B93C40}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1A14151C-EACF-4822-8F9B-D9C2E6B93C40}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1A14151C-EACF-4822-8F9B-D9C2E6B93C40}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
