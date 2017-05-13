@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.21005.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SquareArea", "SquareArea\SquareArea.csproj", "{CAACE058-5FDC-4E0F-A563-B8AF20F655C5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Add1000Days", "Add1000Days\Add1000Days.csproj", "{851112FE-2D6D-4F02-81DD-709BFDB8EC8E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CAACE058-5FDC-4E0F-A563-B8AF20F655C5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CAACE058-5FDC-4E0F-A563-B8AF20F655C5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CAACE058-5FDC-4E0F-A563-B8AF20F655C5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CAACE058-5FDC-4E0F-A563-B8AF20F655C5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{851112FE-2D6D-4F02-81DD-709BFDB8EC8E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{851112FE-2D6D-4F02-81DD-709BFDB8EC8E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{851112FE-2D6D-4F02-81DD-709BFDB8EC8E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{851112FE-2D6D-4F02-81DD-709BFDB8EC8E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

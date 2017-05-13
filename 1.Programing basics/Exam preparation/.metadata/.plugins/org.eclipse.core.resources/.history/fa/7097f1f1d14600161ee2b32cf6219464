@@ -1,0 +1,15 @@
+package views;
+
+import java.awt.EventQueue;
+
+public class StartPoint {
+    public static void main(String[] args) {
+        
+        EventQueue.invokeLater(new Runnable() {
+            public void run() {
+                Application ex = new Application();
+                ex.setVisible(true);
+            }
+        });
+    }
+}
